@@ -9,7 +9,10 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: "https://https://task-tracker-snowy-sigma.vercel.app",
+    credentials: true
+}));
 app.use(express.json()); // Parses incoming JSON requests
 
 // Routes
