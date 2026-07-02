@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL = 'https://task-tracker-api-jiw6.onrender.com';
 
 function App() {
   const [tasks, setTasks] = useState([]);
